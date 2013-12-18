@@ -20,12 +20,26 @@ class Main extends CI_Controller {
 	public function index()
 	{
         $data['sTitle'] = "Chơi game đuổi hình bắt chữ";
-        $data['sBody'] = 'hello';
+        $data['sBody'] = $this->load->view("start_v",$data,true);
         $this->render($data);
 	}
     private function render($data = array()){
         $data['sTitle'] = $data['sTitle'].' - '.$this->config->item("sitename"). ' - '.$this->config->item('suffix');
         $this->load->view("container_v",$data);
+    }
+    public function admin(){
+        $data['sTitle'] = "Admin page";
+        $data['sTQ'] = $this->load->view('admin_tq_v',$data,true);
+        $data['sBody'] = $this->load->view("admin_v",$data,true);
+        $this->render($data);
+    }
+    public function admingame(){
+        $data = array();
+         echo $this->load->view('admin_game_v',$data,true);
+    }
+    public function adminvoucher(){
+        $data = array();
+        echo $this->load->view('admin_voucher_v',$data,true);
     }
 }
 
