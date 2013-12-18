@@ -49,8 +49,8 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'oxid';
-$db['default']['password'] = 'oxid';
+$db['default']['username'] = 'root';
+$db['default']['password'] = '';
 $db['default']['database'] = 'tbdhbc';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';

@@ -34,6 +34,7 @@
     <script src="<?= base_url() ?>src/jquery.bxslider/jquery.bxslider.min.js"></script>
     <script src="<?= base_url() ?>src/jquery.countdown.min.js"></script>
     <script src="<?= base_url() ?>src/jquery.countdown-vi.js"></script>
+    <script src="<?= base_url() ?>src/jquery.maskedinput.min.js"></script>
 
 </head>
 
