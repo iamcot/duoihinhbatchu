@@ -1416,6 +1416,9 @@ li{
     min-height: 100px;
     display: block;
 }
+#piclist img{
+    max-width: 150px;
+}
 @media all and (max-width:600px) {
     .headeruser {
         float: left;

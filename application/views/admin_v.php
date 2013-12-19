@@ -13,9 +13,9 @@
         $( "#tabs" ).tabs(
             {
                 beforeLoad: function( event, ui ) {
-                    // for (var i = 1; i <= 2; i++) {
-                    //     $("#ui-tabs-" + i).empty();
-                    // }
+                    for (var i = 1; i <= 2; i++) {
+                         $("#ui-tabs-" + i).empty();
+                    }
                     ui.jqXHR.error(function() {
                         ui.panel.html(
                             "Trang không tồn tại." );
